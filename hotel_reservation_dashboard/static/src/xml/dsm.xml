@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<template id="reservation_template">
+    <t t-name="ReservationDashBoard">
+        <div>
+            <div class="oh_dashboards" style="max-height: calc(100vh - 50px);overflow-y: auto;">
+                <div class="container-fluid o_pj_dashboard">
+                    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+                        <h2 class="dashboard-title text-white">Room Booking Dashboard</h2>
+                        <div class="month-selector d-flex gap-2 align-items-center">
+                            <input type="month" id="month" value="2025-01" style="display: none"/>
+                            <input type="text" name="datetimes" id="datetimes" placeholder="Select date range" />
+                        </div>
+                    </div>
+                    <div class="RoomTrackTable" style="margin-bottom: 100px;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </t>
+</template>
+
+
+

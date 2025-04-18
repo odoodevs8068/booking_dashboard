@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="booking_edit_dashboard_access" model="res.groups">
+        <field name="name">Booking Dasboard Edit Accesr</field>
+        <field name="category_id" ref="hotel_management_odoo.module_category_hotel_management"/>
+    </record>
+    <record id="booking_dashboard_access" model="res.groups">
+        <field name="name">Booking Dasboard</field>
+        <field name="category_id" ref="hotel_management_odoo.module_category_hotel_management"/>
+    </record>
+
+</odoo>

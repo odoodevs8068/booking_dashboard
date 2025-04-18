@@ -1,0 +1,206 @@
+.main-section{
+    margin:25px;
+    padding:0px;
+    background: none;
+}
+.oh_dashboards {
+    padding: 0px !important;
+}
+.dash-card .card{
+    text-align:center;
+    border:none;
+    margin:20px;
+}
+.dash-card .card:hover {
+
+    transform: translateY(-2px) translateZ(0) !important;
+    box-shadow: 0 10px 10px 0 rgba(62, 57, 107, 0.12), 0 0 0 transparent !important;
+
+}
+.dash-card .dash-count{
+    font-size:35px;
+}
+.dash-card .dash-icon-1{
+    width:100%;
+    font-size: 36px;
+    font-weight: 900;
+    margin-top:10px;
+}
+.dash-card .dash-head{
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.selected-start {
+color: #212529;
+    background: linear-gradient(45deg, #f7cd1f, #f7cd1f);
+}
+
+.selected-end {
+color: #212529;
+    background: linear-gradient(45deg, #f7cd1f, #f7cd1f);
+}
+
+.selected-range {
+color: #212529;
+    background: linear-gradient(45deg, #f7cd1f, #f7cd1f);
+}
+
+.date-cell.booked {
+    background-color: #f28b82;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.date-cell.booked {
+    background-color: #f28b82; /* Light red */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    cursor: not-allowed; /* Indicates the cell is unclickable */
+}
+
+.date-cell small {
+    display: block;
+    font-size: 0.8em;
+    margin-top: 5px;
+    color: #dcdcdc;
+}
+
+
+.booking-tag {
+    background: #007bff;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+
+.oh_dashboards {
+  background: radial-gradient(circle, #1a2049 0%, #13162f 100%);
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.oh_dashboards input,
+.oh_dashboards select,
+.oh_dashboards label {
+  color: #fff;
+  background: #2b2e4a;
+  border: 1px solid #444;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.month-selector {
+  margin-bottom: 20px;
+}
+
+.RoomTrackTable {
+  width: 100%;
+  overflow-x: auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.RoomTrackTable table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.RoomTrackTable th,
+.RoomTrackTable td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.RoomTrackTable thead {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.RoomTrackTable tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+  .RoomTrackTable table,
+  .RoomTrackTable thead,
+  .RoomTrackTable tbody,
+  .RoomTrackTable th,
+  .RoomTrackTable td,
+  .RoomTrackTable tr {
+    display: block;
+  }
+
+  .RoomTrackTable thead {
+    display: none;
+  }
+
+  .RoomTrackTable td {
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .RoomTrackTable td::before {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+    content: attr(data-label);
+    color: #aaa;
+  }
+}
+
+
+
+
+.opacity-theme {
+    /* Define some custom properties. */
+    --hover-color: 255, 255, 255;
+    --gradient-from-color: rgb(172, 50, 228);
+    --gradient-to-color: rgb(72, 1, 255);
+
+    /* Apply the custom properties in the theme. */
+    --hcg-background: linear-gradient(-68deg, var(--gradient-from-color), var(--gradient-to-color));
+    --hcg-header-background: rgba(var(--hover-color), 0.32);
+    --hcg-cell-hovered-column-background: rgba(var(--hover-color), 0.1);
+    --hcg-cell-hovered-row-background: rgba(var(--hover-color), 0.1);
+    --hcg-cell-hovered-background: rgba(var(--hover-color), 0.2);
+    --hcg-header-hovered-background: rgba(var(--hover-color), 0.15);
+    --hcg-color: rgb(255, 255, 255);
+    --hcg-border-radius: 15px;
+    --hcg-font-size: 15px;
+    --hcg-padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

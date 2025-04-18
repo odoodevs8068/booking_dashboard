@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="room_booking_view_form_inherit" model="ir.ui.view">
+        <field name="name">
+            room.booking.view.form.inherit.odoo.hotel.management
+        </field>
+        <field name="model">room.booking</field>
+        <field name="inherit_id" ref="hotel_management_odoo.room_booking_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet/notebook/page[1]/field[@name='room_line_ids']/tree/field[@name='room_id']" position="attributes">
+                <attributes name="domain">[]</attributes>
+            </xpath>
+            <xpath expr="//form/sheet/notebook/page[1]/field[@name='room_line_ids']/tree" position="inside">
+                <field name="state" invisible="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hotel_reservation_dashboard_action" model="ir.actions.client">
+        <field name="name">Booking Dashboard</field>
+        <field name="tag">Reservationdashboard_tags</field>
+    </record>
+
+    <record id="booking_edit_dashboard_access" model="res.groups">
+        <field name="name">Booking Dasboard Edit Access</field>
+        <field name="category_id" ref="hotel_management_odoo.module_category_hotel_management"/>
+    </record>
+    <record id="booking_dashboard_access" model="res.groups">
+        <field name="name">Booking Dasboard</field>
+        <field name="category_id" ref="hotel_management_odoo.module_category_hotel_management"/>
+    </record>
+
+    <menuitem name="Booking Dashboard" id="booking_dashboard_menu"
+              groups="hotel_reservation_dashboard.booking_dashboard_access"
+              parent="hotel_management_odoo.hotel_management_menu_root"
+              action="hotel_reservation_dashboard_action"
+              sequence="1"
+    />
+</odoo>
